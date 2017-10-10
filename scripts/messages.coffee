@@ -7,7 +7,7 @@ module.exports = (robot) ->
   robot.respond /universe/gim, (res) ->
     res.send "> GitHub is great, and Training Day is greater!!"
 
-  robot.respond /USERNAME/gim, (res) ->
+  robot.respond /.*dave.*/gim, (res) ->
     res.send " > That person is awesome"
 
   robot.respond /fruit/gim, (res) ->
@@ -18,3 +18,19 @@ module.exports = (robot) ->
 
   robot.respond /lunch/gim, (res) ->
     res.send " > I want a peanut butter and jelly sandwich for lunch today."
+
+  robot.respond /test/gim, (res) ->
+    res.send " > This worked, pal."
+    
+    
+  robot.respond /.*anywhere.*/gim, (res) ->
+    res.send " > This will match anywhere!!"
+
+  robot.respond /.*match (.)/gim, (res) ->
+    res.send " > I just matched " 
+    
+    
+
+    
+    
+    
